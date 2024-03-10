@@ -1,0 +1,17 @@
+.header {
+    @include flex;
+
+    height: 10%;
+
+    padding: 1.5rem .5rem;
+}
+
+.burger-menu {
+    display: none;
+
+    color: white;
+    font-size: .9rem;
+    padding: .4rem;
+    border-radius: .6rem;
+    background: silver;
+}

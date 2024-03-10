@@ -1,0 +1,155 @@
+.main-part {
+    @include flex(flex-start);
+
+    height: 85%;
+
+    padding: 0 0 1rem 0;
+
+    gap: 2rem;
+}
+
+.menu {
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+
+    height: 100%;
+
+    padding: 1rem;
+
+    background: $menuBg;
+
+    border-radius: 1rem;
+
+    & input {
+        display: none;
+    }
+
+    gap: 2rem;
+}
+
+.social-media {
+    @include flex;
+    flex-direction: column;
+
+    margin-top: auto;
+
+    gap: 1rem;
+}
+
+.outlet {
+    @include flex(flex-start, flex-start);
+
+    width: 100%;
+    height: 100%;
+}
+
+.music-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    width: 100%;
+    max-height: 100%;
+
+    overflow-y: auto;
+}
+
+.music-el::before,
+.music-list::before {
+    @include flex;
+    color: $icnClr;
+    background: $icnBg;
+    transform: translateX(-50%);
+}
+
+.music-el {
+    @include flex;
+    position: relative;
+
+    height: 275px;
+
+    flex-direction: column;
+
+    padding: 1rem;
+    border-radius: 1.5rem;
+
+    background: $menuBg;
+
+    &__title {
+        align-self: flex-start;
+
+        padding: .5rem;
+    }
+
+    & button {
+        @include absolutePosition(5%, 90%);
+        transform: translateX(-50%);
+
+        font-size: 1.5rem;
+
+        transition: all .3s;
+
+        &:hover {
+            color: silver;
+        }
+    }
+
+    &::before {
+        @include absolutePosition(1%, 50%);
+        @include fontAwesomeIcon('\f141');
+
+        transform: translateX(-50%);
+
+        width: 75px;
+        height: 15px;
+
+        border-radius: 5rem;
+    }
+
+    transition: all .3s;
+
+    &:hover {
+
+        & .music-list {
+
+            &__img {
+                filter: brightness(40%);
+            }
+
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.music-list {
+    @include flex;
+    width: 180px;
+    height: 180px;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+
+        border-radius: .4rem;
+
+        object-fit: cover;
+
+        transition: all .3s;
+    }
+
+    &::before {
+        opacity: 0;
+        transition: all .3s;
+        @include absolutePosition(35%, 50%);
+        @include fontAwesomeIcon('\f04b');
+
+        z-index: 20;
+
+        width: 37.5px;
+        height: 37.5px;
+        border-radius: 50%;
+    }
+}

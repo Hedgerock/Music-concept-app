@@ -1,0 +1,19 @@
+@mixin flex ($jc:center, $ai:center) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin absolutePosition ($t:initial,$l:initial,$r:initial,$b:initial) {
+    position: absolute;
+    top: $t;
+    left: $l;
+    right: $r;
+    bottom: $b;
+}
+
+@mixin fontAwesomeIcon ($i) {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: $i;
+}
