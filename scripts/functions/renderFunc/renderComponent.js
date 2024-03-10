@@ -4,8 +4,6 @@ export function render(component) {
     if (!outlet) {
         return;
     }
-
     outlet.innerHTML = '';
-
     outlet.append(component);
 }
