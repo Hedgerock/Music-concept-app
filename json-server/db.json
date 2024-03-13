@@ -7,7 +7,7 @@
       "type": "Retro",
       "img": "https://www.cevirce.com/lyrics/wp-content/uploads/2021/05/wiz-khalifa-ty-dolla-ign-sueco-the-child-lil-yachty-speed-me-up-from-sonic-the-hedgehog-i%CC%87ngilizce-sozleri-turkce-anlamlari-1.jpg",
       "track": "./music/speedMeUp.mp3",
-      "playlist": false,
+      "playlist": true,
       "poster": "https://m.media-amazon.com/images/I/51z9vIlZ+ML._AC_UF1000,1000_QL80_.jpg"
     },
     {

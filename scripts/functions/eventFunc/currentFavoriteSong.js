@@ -4,20 +4,11 @@ import { renderCurrentMusic } from "../renderFunc/renderCurrentMusic.js";
 
 export async function currentSong(props) {
     const { id } = props
-    const isFavorite = window.location.hash === `#/favorites/${id}`
 
-    console.log(isFavorite);
-
-    const elem = await fetchRequest('music', id, isFavorite);
+    const elem = await fetchRequest('music', id);
 
     const request = await fetch(`${url}/music`);
-    let value = await request.json();
-
-    if (isFavorite) {
-        value = value.filter(item => item.playlist)
-    }
-
-    console.log(value);
+    const value = await request.json();
 
     const el = await renderCurrentMusic(elem, value);
     

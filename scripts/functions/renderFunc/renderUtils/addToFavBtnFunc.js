@@ -2,8 +2,8 @@ import { url } from "../../../data.js";
 import { createElem } from "../../createFunc/createEl.js";
 import { methodFunc } from "../renderContent.js";
 
-export function addToFavBtnFunc(music) {
-    let { playlist, id:curId } = music;
+export function addToFavBtnFunc(props) {
+    let { playlist, id:curId } = props;
     const addToFavBtn = createElem({ tag: 'button', className: 'addToFav' });
     const btnIcon = createElem({ tag: 'i', className: playlist ? 'fa-solid fa-heart-circle-xmark' : 'fa-solid fa-heart-circle-plus' })
 

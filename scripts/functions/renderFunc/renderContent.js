@@ -5,8 +5,10 @@ export function renderContent(list, parent) {
     list.forEach(music => {
         const { id:curId, author:authorName, title:titleVal, type:musType, img:picture, track:theSong } = music
 
+        const checkhHash = window.location.hash.includes('#/favorites');
+
         const musicEl = createElem({ tag: 'div', className: 'music-el', dataId: curId });
-        const musicLink = createElem({ tag: 'a', className: 'music-list', href: `#/song/${curId}`});
+        const musicLink = createElem({ tag: 'a', className: 'music-list', href: checkhHash ? `#/favorites/${curId}` : `#/song/${curId}`});
         const musicListImg = createElem({ tag: 'img', className: 'music-list__img', src: picture});
         const musicElTitle = createElem({ tag: 'h3', className: 'music-el__title', textContent: titleVal })
         const addToFavBtn = addToFavBtnFunc(music);

@@ -1,5 +1,6 @@
 export function initMusicTime(currentMusic) {
     const duration = currentMusic.duration;
+    console.log(duration)
     const minutesCalc = Math.floor(duration / 60);
     const secondsCalc = Math.floor(duration % 60);
 

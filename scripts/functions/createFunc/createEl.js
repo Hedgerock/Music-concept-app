@@ -1,5 +1,5 @@
 export function createElem(props) {
-    const { tag, className, textContent, href, dataId, dataTitle, src, target, type, innerHTML, tabIndex} = props;
+    const { tag, className, textContent, href, dataId, dataTitle, src, target, type, innerHTML, tabIndex, } = props;
 
     const el = document.createElement(tag);
     el.className = className || '';

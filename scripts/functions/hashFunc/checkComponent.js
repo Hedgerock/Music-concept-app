@@ -4,7 +4,7 @@ export async function checkComponent(route, hash, id, searchParams) {
     let component;
 
     try { component = await route.component({ hash, id, searchParams }) }
-    catch { component = notFound }
+    catch { component = notFound() }
 
     return component;
 }
