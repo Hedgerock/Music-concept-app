@@ -1,3 +1,7 @@
+:root {
+    --range-width: 100%;
+}
+
 .music-box {
     @include flex;
     width: 100%;
@@ -60,6 +64,7 @@
         width: 100%;
         margin: 1rem 0;
         border-radius: .5rem;
+        position: relative;
         cursor: pointer;
 
         &::-webkit-slider-runnable-track {
@@ -68,11 +73,22 @@
         }
 
         &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            position: relative;
             height: 1rem;
             width: 1rem;
-            border-radius: 50%;
-            background: #393737;
-            -webkit-appearance: none;
+        }
+
+        &::before {
+            content: "";
+            @include absolutePosition(8px, 0);
+
+            width: var(--slider-value, 0%);
+            height: 1rem;
+            border-radius: .5rem;
+            background-color: silver; /* Здесь можно изменить цвет */
+            transform: translateY(-50%);
+            z-index: 20; /* Добавить z-index: -1 */
         }
     }
 

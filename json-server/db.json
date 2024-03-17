@@ -32,23 +32,23 @@
     },
     {
       "id": "4",
-      "author": "Wiz Khalifa, Ty Dolla $ign, Lil Yachty & Sueco the Child",
-      "title": "Speed Me Up (Sonic The Hedgehog)",
+      "author": "Sibastiann",
+      "title": "Lay All Your Love On Me (Slowed And Reverb)",
       "type": "Retro",
-      "img": "https://www.cevirce.com/lyrics/wp-content/uploads/2021/05/wiz-khalifa-ty-dolla-ign-sueco-the-child-lil-yachty-speed-me-up-from-sonic-the-hedgehog-i%CC%87ngilizce-sozleri-turkce-anlamlari-1.jpg",
-      "track": "./music/speedMeUp.mp3",
-      "playlist": false,
-      "poster": "https://m.media-amazon.com/images/I/51z9vIlZ+ML._AC_UF1000,1000_QL80_.jpg"
+      "img": "https://muzyet.net/images/cover/sibastiann/sibastiann-lay-all-your-love-on-me-slowed-and-reverb.jpg",
+      "track": "./music/allYourLoveOnMe.mp3",
+      "playlist": true,
+      "poster": "https://i.ytimg.com/vi/BK5mHvmlCnc/hqdefault.jpg"
     },
     {
       "id": "5",
-      "author": "Wiz Khalifa, Ty Dolla $ign, Lil Yachty & Sueco the Child",
-      "title": "Speed Me Up (Sonic The Hedgehog)",
+      "author": "Coolio",
+      "title": "Gangsta's Paradise",
       "type": "Retro",
-      "img": "https://www.cevirce.com/lyrics/wp-content/uploads/2021/05/wiz-khalifa-ty-dolla-ign-sueco-the-child-lil-yachty-speed-me-up-from-sonic-the-hedgehog-i%CC%87ngilizce-sozleri-turkce-anlamlari-1.jpg",
-      "track": "./music/speedMeUp.mp3",
-      "playlist": false,
-      "poster": "https://m.media-amazon.com/images/I/51z9vIlZ+ML._AC_UF1000,1000_QL80_.jpg"
+      "img": "https://media.pitchfork.com/photos/6334fb47c34405ef214ce2b8/4:3/w_2000,h_1500,c_limit/coolio-dead-dies-death-rapper-gangstas-paradise.png",
+      "track": "./music/ganstasParadise.mp3",
+      "playlist": true,
+      "poster": "https://i.ytimg.com/vi/fPO76Jlnz6c/maxresdefault.jpg"
     },
     {
       "id": "6",

@@ -11,8 +11,16 @@ export function musicRangeDynamicChanges(props) {
             startBtn.innerHTML = playBtn 
         }
 
+        rangeValue(musicRange);
+
         const currentTimeInSeconds = renderComp({ currentTime, musicRange, value })
 
         currentMusic.currentTime = currentTimeInSeconds;
     }
+}
+
+export function rangeValue(range) {
+    const value = range.value;
+    const percentage = (value - range.min) / (range.max - range.min) * 100;
+    range.style.setProperty('--slider-value', `${percentage}%`);
 }

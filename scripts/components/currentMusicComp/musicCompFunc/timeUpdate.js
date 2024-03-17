@@ -1,3 +1,4 @@
+import { rangeValue } from "./musicRangeDynamic.js";
 import { renderComp } from "./renderComp.js";
 
 export function timeUpdate(props) {
@@ -6,5 +7,8 @@ export function timeUpdate(props) {
     currentMusic.addEventListener('timeupdate', () => {
         const value = currentMusic.currentTime;
         renderComp({ currentTime, musicRange, value })
+
+        rangeValue(musicRange);
+        musicRange.style.setProperty('--slider-value', `${percentage}%`);
     });
 }
